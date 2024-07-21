@@ -8,6 +8,7 @@ const Contact = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset, // Add the reaet method from react-hot-form
   } = useForm()
   const onSubmit = async(data) => {
     const userInfo = {
@@ -18,6 +19,7 @@ const Contact = () => {
     try {
        await axios.post("https://getform.io/f/amdpyklb",userInfo)
        toast.success("Your message has been sent successfully!")
+       reset() // Clear the form after successful submission
     } catch (error) {
       toast.error("An error has occurred");
     }
