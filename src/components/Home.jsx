@@ -78,7 +78,7 @@ function Home() {
       </div>
 
     </div>
-    <div className='md:w-1/2 md:ml-48 md:mt-20 mt-7 order-1'>
+    <div className='md:w-1/2 md:ml-48 md:mt-20 mt-7 order-1 justify-center items-center '>
      <img src={Img2} alt='image' className='rounded-full md:w-[400px] md:h-[400px] border-[2px]' />
     </div>
     </div>

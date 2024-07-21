@@ -33,13 +33,13 @@ const Contact = () => {
       <div className=' flex flex-col justify-center items-center'>
         <form onSubmit={handleSubmit(onSubmit)}
         // action="https://getform.io/f/amdpyklb" method='post'
-         className=' bg-slate-400 w-96 px-4 my-2 rounded-xl'>
+         className=' bg-slate-400 w-72 px-4 my-2 rounded-xl'>
         <h1 className='font-semibold text-2xl'>Message me</h1>
         <div>
         <label className='block'>Full Name</label>
         <input 
         {...register("name", { required: true })}
-        className=' border p-1 mb-4 rounded-md w-80'
+        className=' border p-1 mb-4 rounded-md w-64'
          type="text"
          id='name'
          name='name'
@@ -50,7 +50,7 @@ const Contact = () => {
         <label className='block'>Email</label>
         <input
          {...register("email", { required: true })}
-        className='border p-1 mb-4 rounded-md w-80'
+        className='border p-1 mb-4 rounded-md w-64'
          type="text"
          id='email'
          name='email'
@@ -61,7 +61,7 @@ const Contact = () => {
         <label className='block'>Message</label>
         <textarea 
          {...register("message", { required: true })}
-        className='border p-5 mb-4 rounded-md w-80'
+        className='border p-5 mb-4 rounded-md w-64'
          type="text"
          id='message'
          name='message'
